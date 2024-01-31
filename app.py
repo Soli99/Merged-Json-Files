@@ -78,7 +78,7 @@ def categoria_detalhes(category_name):
         return "Category not found"
     convert_dates_to_datetime(items)
     items.sort(key=lambda x: x['date'])
-    items.sort(key=lambda x: x['date'])
+   # items.sort(key=lambda x: x['date'])
     fig_istore = px.scatter(items, x='date', y='price_istore', title=f'Prices - iStore')
     graph_json_istore = fig_istore.to_json()
 
