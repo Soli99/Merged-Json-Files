@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ category_name }} Detalhes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Adicione o link para a biblioteca Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        /* Adicione estilos CSS conforme necessário */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .custom-container {
+            min-height: 600px;
+        .page-container {
+            max-width: 800px; 
+            margin: 0 auto;
+            padding-right: 15px; 
+            padding-left: 15px;   
+        }
+        .container {
+            background-color: #fff; /* Set container background color to white */
+            padding: 20px; /* Add padding to the container */
+            border-radius: 10px; /* Add border-radius for slightly rounded corners */
+        }
+        .graph-container {
+            display: none;
+        }
+        .text-center {
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+       }
+     </style>
+
+</head>
+<body>
+    <div class="container page-container">
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>  
+    <h1>{{categories[category_name][0]['name']}}<br><br></h1>
+
+    <div>
+        <h3>Prices By Time (iStore)</h3>
+        <div id="graph_istore" style="height: 300px; width: 90%""></div>
+    </div>
+    <div>
+        <h3>Prices By Time (Chip7)</h3>
+        <div id="graph_chip7" style="height: 300px; width: 90%""></div>
+    </div>
+    <div>
+        <h3>Prices by Time (Radio Popular)</h3>
+        <div id="graph_radiopop"  style="height: 300px; width: 90%"></div>
+    </div>
+    </div>
+    <script>
+        // Renderize o gráfico para iStore usando Plotly.js
+        var graph_istore_data = {{ graph_json_istore | safe }};
+        Plotly.newPlot('graph_istore', graph_istore_data.data, graph_istore_data.layout);
+
+        // Renderize o gráfico para Chip7 usando Plotly.js
+        var graph_chip7_data = {{ graph_json_chip7 | safe }};
+        Plotly.newPlot('graph_chip7', graph_chip7_data.data, graph_chip7_data.layout);
+
+        // Renderize o gráfico para Radio Popular usando Plotly.js
+        var graph_radiopop_data = {{ graph_json_radiopop | safe }};
+        Plotly.newPlot('graph_radiopop', graph_radiopop_data.data, graph_radiopop_data.layout);
+    
+  
+    </script>
+    
+
+    <!-- Adicione o restante do seu HTML conforme necessário -->
+
+</body>
+</html>

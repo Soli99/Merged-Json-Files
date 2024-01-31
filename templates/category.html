@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renamed_category_name }} - Detalhes da Categoria</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Adicione estilos CSS conforme necessário */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .custom-container {
+            min-height: 600px;
+        }
+
+        .product-details-section {
+            display: grid;
+            grid-template-columns: auto auto;  /* Duas colunas, uma para a imagem e outra para as características */
+            gap: 20px;  /* Espaço entre as colunas */
+            text-align: center;
+        }
+
+       .product-details-section img {
+            max-width: 100%;  
+       }
+
+       .characteristics {
+            text-align: left;  
+            font-size: 18px;   
+        }         
+        
+        .product-details {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .product-image {
+            max-width: 400px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .characteristics {
+            flex-grow: 1;
+        }
+
+        .characteristics h2 {
+            font-size: 16px; 
+            margin-bottom: 10px;
+        }
+
+        .characteristics ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 14px; 
+        }
+
+        .characteristics li {
+            margin-bottom: 8px;
+        }
+
+        .category-details {
+            margin-top: 20px;
+        }
+
+        .category-details h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            white-space: break-spaces;
+        }
+
+        .category-details p {
+            margin-bottom: 10px;
+        }
+
+        .prices {
+            margin-top: 20px;
+        }
+
+        .prices h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .prices ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .prices li {
+            margin-bottom: 10px;
+        }
+
+        .websites {
+            margin-top: 20px;
+        }
+
+        .websites h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .websites ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .websites li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: rgba(0, 0, 255, 0.1); /* Cor azul com transparência */
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+    </head>
+<body>
+
+    <div class="container mt-3 custom-container">
+    <nav>
+       <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+    <h1>{{ categories[category_name][0]['name'].split(',')[0].strip()}} - Details <br> <br></h1>
+
+    <!--<div style="display: flex; align-items: center;">-->
+    
+    <section class="product-details-section">
+      <!-- Imagem do Produto -->
+       <img src="{{ categories[category_name][0]['image'] }}" alt="Imagem do Produto" style="width: 350px; height: auto">
+
+      <!-- Informações sobre o Produto -->
+      <!--<div style="margin-left: 20px;"> -->
+       <section class="characteristics">
+       <h2><strong>Characteristics:</strong></h2>
+          <ul>
+          {% for key, value in categories[category_name][0]['characteristics'].items() %}
+          <li><strong>{{ key }}:</strong> {{ value }}</li>
+          {% endfor %}
+          </ul>
+       </section>
+    </section>
+    <a href="{{ url_for('categoria_detalhes', category_name=category_name) }}" class="btn btn-primary">Ver Detalhes</a>
+    
+    <table border="1">
+    <tr>
+        <th>Last Update</th>
+        <th>Price (iStore)</th>
+        <th>Price (Chip7)</th>
+        <th>Price (Radio Popular)</th>
+        <th>Website (iStore)</th>
+        <th>Website (Chip7)</th>
+        <th>Website (Radio Popular)</th>
+        
+    {% if most_recent_entry %}
+    <tr>
+        <td>{{ most_recent_entry['date'] }}</td>
+        <td>{{ most_recent_entry.get('price_istore', 'N/A') }} €</td>
+        <td>{{ most_recent_entry.get('price_chip7', 'N/A') }} €</td>
+        <td>{{ most_recent_entry.get('price_radiopop', 'N/A') }} €</td>
+        <td><a href="{{ most_recent_entry.get('url_istore', '#') }}" target="_blank">Details in iStore</a></td>
+        <td><a href="{{ most_recent_entry.get('url_chip7', '#') }}" target="_blank">Details in Chip7</a></td>
+        <td><a href="{{ most_recent_entry.get('url_radiopop', '#') }}" target="_blank">Details in Radio Popular</a></td>
+        <!--<td>{{ most_recent_entry.get('url_istore', 'N/A') }}</td>
+        <td>{{ most_recent_entry.get('url_chip7', 'N/A') }}</td>
+        <td>{{ most_recent_entry.get('url_radiopop', 'N/A') }}</td> -->
+    </tr>
+    {% else %}
+    <tr>
+        <td colspan="7">Sem informações disponíveis.</td>
+    </tr>
+    {% endif %}
+    </table>
+
+    {% if graph_json_istore %}
+    <h2>Gráfico para iStore</h2>
+    <div id="graph_istore"></div>
+    {% endif %}
+
+    {% if graph_json_chip7 %}
+    
+
+
+    <h2>Gráfico para Chip7</h2>
+    <div id="graph_chip7"></div>
+    {% endif %}
+
+    {% if graph_json_radiopop %}
+    <h2>Gráfico para Radio Popular</h2>
+    <div id="graph_radiopop"></div>
+    {% endif %}
+
+    <!-- Inclui as bibliotecas Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    {% if graph_json_istore %}
+    <!-- Renderize o gráfico para iStore usando Plotly.js -->
+    <script>
+        var graph_istore_data = {{ graph_json_istore | safe }};
+        Plotly.newPlot('graph_istore', graph_istore_data.data, graph_istore_data.layout);
+    </script>
+    {% endif %}
+
+    {% if graph_json_chip7 %}
+    <!-- Renderize o gráfico para Chip7 usando Plotly.js -->
+    <script>
+        var graph_chip7_data = {{ graph_json_chip7 | safe }};
+        Plotly.newPlot('graph_chip7', graph_chip7_data.data, graph_chip7_data.layout);
+    </script>
+    {% endif %}
+
+    {% if graph_json_radiopop %}
+    <!-- Renderize o gráfico para Radio Popular usando Plotly.js -->
+    <script>
+        var graph_radiopop_data = {{ graph_json_radiopop | safe }};
+        Plotly.newPlot('graph_radiopop', graph_radiopop_data.data, graph_radiopop_data.layout);
+    </script>
+    {% endif %}
+</div>
+</body>
+</html>
