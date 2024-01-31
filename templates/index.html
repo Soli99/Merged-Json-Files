@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+</head>-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- Add Bootstrap CSS link -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set background color to light gray */
+            margin: 20px; /* Add margin to the body */
+        }
+        h1 {
+            text-align: center; /* Center align the title */
+            margin-bottom: 20px; /* Add margin below the title */
+            color: #495057; /* Set text color to dark gray */
+        }
+        .navbar {
+            background-color: #e9ecef; /* Set navbar background color to light gray */
+            border-radius: 10px; /* Add border-radius for slightly rounded corners */
+            margin-bottom: 20px; /* Add margin below the navbar */
+        }
+        .navbar-brand {
+            color: #495057; /* Set text color of navbar brand to dark gray */
+        }
+        .container {
+            background-color: #fff; /* Set container background color to white */
+            padding: 20px; /* Add padding to the container */
+            border-radius: 10px; /* Add border-radius for slightly rounded corners */
+        }
+        .table-bordered td, .table-bordered th {
+            border: 0; /* Remove borders from cells and headers */
+        }
+        .search-bar {
+            margin-bottom: 20px; /* Add margin below the search bar */
+         }
+        .custom-container {
+            min-height: 600px; 
+        }
+        .search-btn {
+           float: right;
+        }
+        .navbar .btn-search {
+            margin-right: 10px; /* Ajuste conforme necessário */
+       }
+    </style>
+<body>
+
+    <div class="container mt-3 custom-container">
+
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <span class="navbar-brand mb-0 h1">Products</span>
+    </nav>
+    
+    <h1>Categories</h1>
+
+    <ul>
+        {% for category_name, category_info in categories.items() %}
+        <li>
+            <a href="{{ url_for('categoria', category_name=category_info['category_name']) }}">
+                {{ category_name }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <!-- Bootstrap JS scripts (jQuery and Popper.js required) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
