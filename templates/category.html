@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renamed_category_name }} - Detalhes da Categoria</title>
+    <title>{{ renamed_category_name }} - Category Details</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
-        /* Adicione estilos CSS conforme necessário */
+        /* Add CSS styles as needed */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -22,8 +22,8 @@
 
         .product-details-section {
             display: grid;
-            grid-template-columns: auto auto;  /* Duas colunas, uma para a imagem e outra para as características */
-            gap: 20px;  /* Espaço entre as colunas */
+            grid-template-columns: auto auto;  /* Two columns, one for the image and one for the characteristics */
+            gap: 20px;  /* Space between columns */
             text-align: center;
         }
 
@@ -128,7 +128,7 @@
         }
 
         th {
-            background-color: rgba(0, 0, 255, 0.1); /* Cor azul com transparência */
+            background-color: rgba(0, 0, 255, 0.1); /* Blue color with transparency */
         }
 
         a {
@@ -189,13 +189,13 @@
     </tr>
     {% else %}
     <tr>
-        <td colspan="7">Sem informações disponíveis.</td>
+        <td colspan="7">No information available.</td>
     </tr>
     {% endif %}
     </table>
 
     {% if graph_json_istore %}
-    <h2>Gráfico para iStore</h2>
+    <h2>Chart for iStore</h2>
     <div id="graph_istore"></div>
     {% endif %}
 
@@ -203,20 +203,20 @@
     
 
 
-    <h2>Gráfico para Chip7</h2>
+    <h2>Chart for Chip7</h2>
     <div id="graph_chip7"></div>
     {% endif %}
 
     {% if graph_json_radiopop %}
-    <h2>Gráfico para Radio Popular</h2>
+    <h2>Chart for Radio Popular</h2>
     <div id="graph_radiopop"></div>
     {% endif %}
 
-    <!-- Inclui as bibliotecas Plotly -->
+    <!-- Includes Plotly libraries -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     {% if graph_json_istore %}
-    <!-- Renderize o gráfico para iStore usando Plotly.js -->
+    <!-- Render plot to iStore using Plotly.js-->
     <script>
         var graph_istore_data = {{ graph_json_istore | safe }};
         Plotly.newPlot('graph_istore', graph_istore_data.data, graph_istore_data.layout);
@@ -224,7 +224,7 @@
     {% endif %}
 
     {% if graph_json_chip7 %}
-    <!-- Renderize o gráfico para Chip7 usando Plotly.js -->
+    <!-- Render plot to Chip7 using Plotly.js -->
     <script>
         var graph_chip7_data = {{ graph_json_chip7 | safe }};
         Plotly.newPlot('graph_chip7', graph_chip7_data.data, graph_chip7_data.layout);
@@ -232,7 +232,7 @@
     {% endif %}
 
     {% if graph_json_radiopop %}
-    <!-- Renderize o gráfico para Radio Popular usando Plotly.js -->
+    <!-- Render plot to Radio Popular using Plotly.js -->
     <script>
         var graph_radiopop_data = {{ graph_json_radiopop | safe }};
         Plotly.newPlot('graph_radiopop', graph_radiopop_data.data, graph_radiopop_data.layout);
