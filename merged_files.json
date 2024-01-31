@@ -14,8 +14,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mqkr3poa",
             "price_radiopop": 1449.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-15-m2-256g-2023-sv",
-            "characteristics_radiopop": {
-                "sku": "MACB AIR APPLE 15 M2 256G 2023 SV",
+            "characteristics": {
+                "Model": "MACB AIR APPLE 15 M2 256G 2023 SV",
                 "Processor Model": "Apple M2",
                 "Processor Family": "Apple M2",
                 "NúMERO DE NúCLEOS": "Octa Core",
@@ -44,8 +44,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mqkr3poa",
             "price_radiopop": 1449.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-15-m2-256g-2023-sv",
-            "characteristics_radiopop": {
-                "sku": "MACB AIR APPLE 15 M2 256G 2023 SV",
+            "characteristics": {
+                "Model": "MACB AIR APPLE 15 M2 256G 2023 SV",
                 "Processor Model": "Apple M2",
                 "Processor Family": "Apple M2",
                 "NúMERO DE NúCLEOS": "Octa Core",
@@ -74,8 +74,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mqkr3poa",
             "price_radiopop": 1449.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-15-m2-256g-2023-sv",
-            "characteristics_radiopop": {
-                "sku": "MACB AIR APPLE 15 M2 256G 2023 SV",
+            "characteristics": {
+                "Model": "MACB AIR APPLE 15 M2 256G 2023 SV",
                 "Processor Model": "Apple M2",
                 "Processor Family": "Apple M2",
                 "NúMERO DE NúCLEOS": "Octa Core",
@@ -104,8 +104,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mqkr3poa",
             "price_radiopop": 1449.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-15-m2-256g-2023-sv",
-            "characteristics_radiopop": {
-                "sku": "MACB AIR APPLE 15 M2 256G 2023 SV",
+            "characteristics": {
+                "Model": "MACB AIR APPLE 15 M2 256G 2023 SV",
                 "Processor Model": "Apple M2",
                 "Processor Family": "Apple M2",
                 "NúMERO DE NúCLEOS": "Octa Core",
@@ -134,8 +134,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mqkr3poa",
             "price_radiopop": 1449.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-15-m2-256g-2023-sv",
-            "characteristics_radiopop": {
-                "sku": "MACB AIR APPLE 15 M2 256G 2023 SV",
+            "characteristics": {
+                "Model": "MACB AIR APPLE 15 M2 256G 2023 SV",
                 "Processor Model": "Apple M2",
                 "Processor Family": "Apple M2",
                 "NúMERO DE NúCLEOS": "Octa Core",
@@ -166,8 +166,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mtl73poa",
             "price_radiopop": 1799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3-512g-mtl73po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3 512G MTL73PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3 512G MTL73PO",
                 "Processor Model": "8-core",
                 "Processor Family": "Apple M3",
                 "RAM": "8 GB",
@@ -192,8 +192,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mtl73poa",
             "price_radiopop": 1799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3-512g-mtl73po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3 512G MTL73PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3 512G MTL73PO",
                 "Processor Model": "8-core",
                 "Processor Family": "Apple M3",
                 "RAM": "8 GB",
@@ -218,8 +218,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mtl73poa",
             "price_radiopop": 1799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3-512g-mtl73po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3 512G MTL73PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3 512G MTL73PO",
                 "Processor Model": "8-core",
                 "Processor Family": "Apple M3",
                 "RAM": "8 GB",
@@ -244,8 +244,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mtl73poa",
             "price_radiopop": 1799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3-512g-mtl73po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3 512G MTL73PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3 512G MTL73PO",
                 "Processor Model": "8-core",
                 "Processor Family": "Apple M3",
                 "RAM": "8 GB",
@@ -270,8 +270,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mtl73poa",
             "price_radiopop": 1799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3-512g-mtl73po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3 512G MTL73PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3 512G MTL73PO",
                 "Processor Model": "8-core",
                 "Processor Family": "Apple M3",
                 "RAM": "8 GB",
@@ -298,8 +298,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mly03poa",
             "price_radiopop": 1489.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-m2-512-mlxx3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Air",
+            "characteristics": {
+                "Model": "MacBook Air",
                 "Processor Family": "Apple M2",
                 "RAM": "8 GB",
                 "SSD Storage": "512 GB",
@@ -326,8 +326,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mly03poa",
             "price_radiopop": 1489.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-m2-512-mlxx3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Air",
+            "characteristics": {
+                "Model": "MacBook Air",
                 "Processor Family": "Apple M2",
                 "RAM": "8 GB",
                 "SSD Storage": "512 GB",
@@ -354,8 +354,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mly03poa",
             "price_radiopop": 1489.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-m2-512-mlxx3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Air",
+            "characteristics": {
+                "Model": "MacBook Air",
                 "Processor Family": "Apple M2",
                 "RAM": "8 GB",
                 "SSD Storage": "512 GB",
@@ -382,8 +382,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mly03poa",
             "price_radiopop": 1489.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-m2-512-mlxx3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Air",
+            "characteristics": {
+                "Model": "MacBook Air",
                 "Processor Family": "Apple M2",
                 "RAM": "8 GB",
                 "SSD Storage": "512 GB",
@@ -410,8 +410,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mly03poa",
             "price_radiopop": 1489.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-air-apple-m2-512-mlxx3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Air",
+            "characteristics": {
+                "Model": "MacBook Air",
                 "Processor Family": "Apple M2",
                 "RAM": "8 GB",
                 "SSD Storage": "512 GB",
@@ -440,8 +440,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw13poa",
             "price_radiopop": 2729.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3pro-512g-mrw43po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3PRO 512G MRW43PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3PRO 512G MRW43PO",
                 "Processor Model": "12-core",
                 "Processor Family": "Apple M3 PRO",
                 "RAM": "18 GB",
@@ -467,8 +467,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw13poa",
             "price_radiopop": 2729.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3pro-512g-mrw43po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3PRO 512G MRW43PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3PRO 512G MRW43PO",
                 "Processor Model": "12-core",
                 "Processor Family": "Apple M3 PRO",
                 "RAM": "18 GB",
@@ -494,8 +494,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw13poa",
             "price_radiopop": 2729.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3pro-512g-mrw43po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3PRO 512G MRW43PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3PRO 512G MRW43PO",
                 "Processor Model": "12-core",
                 "Processor Family": "Apple M3 PRO",
                 "RAM": "18 GB",
@@ -521,8 +521,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw13poa",
             "price_radiopop": 2729.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3pro-512g-mrw43po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3PRO 512G MRW43PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3PRO 512G MRW43PO",
                 "Processor Model": "12-core",
                 "Processor Family": "Apple M3 PRO",
                 "RAM": "18 GB",
@@ -548,8 +548,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw13poa",
             "price_radiopop": 2729.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3pro-512g-mrw43po",
-            "characteristics_radiopop": {
-                "sku": "PRO APPLE M3PRO 512G MRW43PO",
+            "characteristics": {
+                "Model": "PRO APPLE M3PRO 512G MRW43PO",
                 "Processor Model": "12-core",
                 "Processor Family": "Apple M3 PRO",
                 "RAM": "18 GB",
@@ -577,8 +577,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mnw83poa",
             "price_radiopop": 2499.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m2pro-1tb-mphj3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Pro M2",
+            "characteristics": {
+                "Model": "MacBook Pro M2",
                 "Processor Model": "Apple M2 Pro 12-core",
                 "Processor Family": "Apple M2 PRO",
                 "RAM": "16 GB",
@@ -607,8 +607,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mnw83poa",
             "price_radiopop": 2499.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m2pro-1tb-mphj3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Pro M2",
+            "characteristics": {
+                "Model": "MacBook Pro M2",
                 "Processor Model": "Apple M2 Pro 12-core",
                 "Processor Family": "Apple M2 PRO",
                 "RAM": "16 GB",
@@ -637,8 +637,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mnw83poa",
             "price_radiopop": 2499.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m2pro-1tb-mphj3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Pro M2",
+            "characteristics": {
+                "Model": "MacBook Pro M2",
                 "Processor Model": "Apple M2 Pro 12-core",
                 "Processor Family": "Apple M2 PRO",
                 "RAM": "16 GB",
@@ -667,8 +667,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mnw83poa",
             "price_radiopop": 2499.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m2pro-1tb-mphj3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Pro M2",
+            "characteristics": {
+                "Model": "MacBook Pro M2",
                 "Processor Model": "Apple M2 Pro 12-core",
                 "Processor Family": "Apple M2 PRO",
                 "RAM": "16 GB",
@@ -697,8 +697,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mnw83poa",
             "price_radiopop": 2499.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m2pro-1tb-mphj3po",
-            "characteristics_radiopop": {
-                "sku": "MacBook Pro M2",
+            "characteristics": {
+                "Model": "MacBook Pro M2",
                 "Processor Model": "Apple M2 Pro 12-core",
                 "Processor Family": "Apple M2 PRO",
                 "RAM": "16 GB",
@@ -729,8 +729,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw33poa",
             "price_radiopop": 3799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3max-1tb-mrw33po",
-            "characteristics_radiopop": {
-                "sku": "MRW33PO/A",
+            "characteristics": {
+                "Model": "MRW33PO/A",
                 "Processor Model": "14-core",
                 "Processor Family": "Apple M3 MAX",
                 "RAM": "36 GB",
@@ -755,8 +755,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw33poa",
             "price_radiopop": 3799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3max-1tb-mrw33po",
-            "characteristics_radiopop": {
-                "sku": "MRW33PO/A",
+            "characteristics": {
+                "Model": "MRW33PO/A",
                 "Processor Model": "14-core",
                 "Processor Family": "Apple M3 MAX",
                 "RAM": "36 GB",
@@ -781,8 +781,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw33poa",
             "price_radiopop": 3799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3max-1tb-mrw33po",
-            "characteristics_radiopop": {
-                "sku": "MRW33PO/A",
+            "characteristics": {
+                "Model": "MRW33PO/A",
                 "Processor Model": "14-core",
                 "Processor Family": "Apple M3 MAX",
                 "RAM": "36 GB",
@@ -807,8 +807,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw33poa",
             "price_radiopop": 3799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3max-1tb-mrw33po",
-            "characteristics_radiopop": {
-                "sku": "MRW33PO/A",
+            "characteristics": {
+                "Model": "MRW33PO/A",
                 "Processor Model": "14-core",
                 "Processor Family": "Apple M3 MAX",
                 "RAM": "36 GB",
@@ -833,8 +833,8 @@
             "url_chip7": "https://chip7.pt/computadores/portateis/apple/mrw33poa",
             "price_radiopop": 3799.99,
             "url_radiopop": "https://www.radiopopular.pt/produto/macbook-pro-apple-m3max-1tb-mrw33po",
-            "characteristics_radiopop": {
-                "sku": "MRW33PO/A",
+            "characteristics": {
+                "Model": "MRW33PO/A",
                 "Processor Model": "14-core",
                 "Processor Family": "Apple M3 MAX",
                 "RAM": "36 GB",

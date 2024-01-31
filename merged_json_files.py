@@ -42,7 +42,7 @@ def manipulate_and_merge(chip7_data, istore_data, radiopop_data, output_file_pat
                 # Add price_radiopop, url_radiopop, and characteristics from radiopop_data to istore_data
                 istore_product['price_radiopop'] = float(radiopop_product.get('offers', {}).get('price'))
                 istore_product['url_radiopop'] = radiopop_product.get('offers', {}).get('url')
-                istore_product['characteristics_radiopop'] = {
+                istore_product['characteristics'] = {
                         key: value for key, value in radiopop_product.get('characteristics', {}).items() if key != 'Warranty'
                 #}key: value for key, value in radiopop_product.items() if key not in ['name', 'date', 'image', 'offers']
                 }
